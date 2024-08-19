@@ -1,0 +1,150 @@
+/* General reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: "Julius Sans One", "sans-serif";
+    font-weight: 500;
+  }
+  .margins {
+    margin: 0 2.4rem;
+  }
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 120rem;
+  }
+  /* Home page section*/
+  .model-img {
+    height: 100vh;
+    background-image: url(/images/hero.avif);
+    background-size: cover;
+    background-position: center;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2.4rem 0;
+  }
+  .nav-btns {
+    display: flex;
+    gap: 3.2rem;
+    margin-left: auto;
+  }
+  .btn {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+  /* gallery section */
+  .section-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .models-heading {
+    font-family: "Julius Sans One", "sans-serif";
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 9.6rem 0 2rem 0;
+    color: #999;
+  }
+  .models-gallery {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, auto);
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1.2s;
+  }
+  .models-gallery img {
+    width: 28rem;
+    height: 36rem;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .models-gallery:hover {
+    transform: scale(1.1);
+    z-index: 3;
+  }
+  .models-gallery img:hover {
+    opacity: 1;
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  .heading-featured-in {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin: 9.6rem 0 2rem 0;
+    color: #999;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logos img {
+    height: 3rem;
+    filter: brightness(0);
+    opacity: 60%;
+  }
+  .section-testimonials {
+    margin-top: 6rem;
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+  }
+  .testimonial-heading {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #999;
+  }
+  .testimonial-img {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  .testimonial-text {
+    font-family: serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+  .testimonial-name {
+    font-size: 1.6rem;
+    color: #777;
+  }
+  /* SECTION COVER STORIES */
+  .section-cover-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cover-stories-heading {
+    font-family: "Julius Sans One", "sans-serif";
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 9.6rem 0 2rem 0;
+    color: #999;
+  }
+  .cover-stories {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .cover-stories img {
+    width: 24rem;
+    height: 36rem;
+    margin-bottom: 1.2rem;
+  }
